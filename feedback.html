@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - BlueChat</title>
+  <meta name="description" content="Send feedback to BlueChat team. We'd love to hear from you!">
+  <link rel="icon" type="image/x-icon" href="logo/bluelogo.ico">
+  <link rel="stylesheet" href="bluechat.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo/bluelogo.ico" alt="BlueChat Logo" class="logo-img">
+        <h1>BlueChat</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Feedback Section -->
+  <section class="feedback-container">
+    <div class="feedback-header">
+      <h2>We'd Love Your Feedback</h2>
+      <p>Help us improve BlueChat by sharing your thoughts, suggestions, or reporting issues.</p>
+    </div>
+
+    <div class="feedback-content">
+      <div class="feedback-form-wrapper">
+        <form id="feedbackForm" class="feedback-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="feedbackType">Feedback Type *</label>
+            <select id="feedbackType" name="feedbackType" required>
+              <option value="">Select feedback type</option>
+              <option value="bug-report">Bug Report</option>
+              <option value="feature-request">Feature Request</option>
+              <option value="suggestion">Suggestion</option>
+              <option value="compliment">Compliment</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small>Please provide detailed information to help us better assist you</small>
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to updates about BlueChat</label>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Feedback</button>
+        </form>
+
+        <div id="successMessage" class="success-message" style="display:none;">
+          <div class="thank-you-icon">✓</div>
+          <h3>Thank You for Choosing Us!</h3>
+          <p>We appreciate your feedback and will review it shortly. Your input helps us improve BlueChat!</p>
+          <a href="index.html" class="btn-back">← Back to Home</a>
+        </div>
+      </div>
+
+      <!-- Support Info -->
+      <div class="support-info">
+        <h3>Other Ways to Reach Us</h3>
+        
+        <div class="contact-method">
+          <span class="contact-icon">📧</span>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:contact@bluechat.app">contact@bluechat.app</a></p>
+            <p class="small-text">Response time: 24-48 hours</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <span class="contact-icon">💬</span>
+          <div>
+            <h4>Social Media</h4>
+            <p>Follow us and reach out through our social channels</p>
+            <div class="social-links-small">
+              <a href="https://twitter.com" target="_blank">Twitter</a>
+              <a href="https://instagram.com" target="_blank">Instagram</a>
+              <a href="https://facebook.com" target="_blank">Facebook</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <span class="contact-icon">🐛</span>
+          <div>
+            <h4>Report a Bug</h4>
+            <p>Found an issue? Please report it using the form above with screenshots if possible.</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <span class="contact-icon">💡</span>
+          <div>
+            <h4>Feature Requests</h4>
+            <p>Have a great idea? We'd love to hear about features you'd like to see in BlueChat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="feedback-faq">
+      <h3>Frequently Asked Questions</h3>
+      
+      <div class="faq-item">
+        <h4>How long does it take to get a response?</h4>
+        <p>We try to respond to all feedback within 24-48 hours. Critical bug reports are prioritized.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Will you implement all feature requests?</h4>
+        <p>We review all suggestions carefully and prioritize based on user demand and feasibility. Popular requests are more likely to be implemented.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Can I attach screenshots?</h4>
+        <p>Yes! Screenshots are very helpful for bug reports. You can attach up to 5 files (10MB total).</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Is my feedback private?</h4>
+        <p>Your feedback is treated as confidential. We only use it to improve BlueChat and won't share it without your permission.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="logo/bluelogo.ico" alt="BlueChat Logo" class="footer-logo-img">
+          <h4>BlueChat</h4>
+        </div>
+        <p>Connect offline. Message securely.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/amarjeet-kumar-7237ba372/" target="_blank" title="LinkedIn" class="social-link-item">
+            <img src="logo/linkedin.jpg" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://www.youtube.com/@whoami-amarjeet" target="_blank" title="YouTube" class="social-link-item">
+            <img src="logo/youtube.jpg" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://www.instagram.com/whoa.mi580/" target="_blank" title="Instagram" class="social-link-item">
+            <img src="instagram.jpg" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586700243863" target="_blank" title="Facebook" class="social-link-item">
+            <img src="logo/facebook.png" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="mailto:whoami.amar@gmail.com.app" title="Email" class="social-link-item">
+            <img src="logo/gmail.png" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://x.com/whoami_Amar" target="_blank" title="Twitter" class="social-link-item">
+            <img src="logo/twitter.jpg" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://github.com/Amarjeetlocato?tab=packages" target="_blank" title="github" class="social-link-item">
+            <img src="logo/github.png" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BlueChat. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="bluechat.js"></script>
+</body>
+</html>

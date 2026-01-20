@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueChat - Bluetooth Messaging App</title>
+  <meta name="description" content="BlueChat - Anonymous Bluetooth Messaging App. Connect offline, message securely without internet.">
+  <link rel="icon" type="image/x-icon" href="logo/bluelogo.ico">
+  <link rel="stylesheet" href="bluechat.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo/bluelogo.ico" alt="BlueChat Logo" class="logo-img">
+        <h1>BlueChat</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="logo/image.png" alt="BlueChat Bluetooth" class="hero-bluetooth-icon">
+      <h2>BlueChat</h2>
+      <p>Connect Offline. Message Securely.</p>
+      <p class="hero-subtitle">Anonymous Bluetooth messaging without internet dependency</p>
+      <a href="#versions" class="cta-button">Explore Versions</a>
+    </div>
+  </section>   
+
+  <!-- Versions Sections - Side by Side -->
+  <section class="versions-wrapper" id="versions">
+    <!-- Latest Version Section -->
+    <div class="versions-section">
+      <h2>Latest Version</h2>
+      <div class="version-container">
+        <div class="version-card recent">
+          <div class="version-card-horizontal">
+            <div class="version-image-section">
+              <img src="screenshort.jpeg" alt="BlueChat v2.1 Screenshot">
+            </div>
+            <div class="version-info-section">
+              <h3>BlueChat v1.0</h3>
+              <p class="version-date">Released: January 2026</p>
+              <ul class="features">
+                <li>✓ Improved UI with Dark Mode</li>
+                <li>✓ Better Bluetooth Stability</li>
+                <li>✓ Message Encryption</li>
+                <li>✓ File Sharing (Small files)</li>
+              </ul>
+              <a href="/app-debug.apk" class="download-btn" target="_blank">📥 Download APK</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upcoming Version Section -->
+    <div class="upcoming-section">
+      <h2>Upcoming Features</h2>
+      <div class="upcoming-container">
+        <div class="upcoming-card">
+          <div class="upcoming-card-horizontal">
+            <div class="upcoming-image-section">
+              <img src="screenshort.jpeg" alt="BlueChat v3.0 Coming Soon">
+              <span class="badge-soon">Coming Soon</span>
+            </div>
+            <div class="upcoming-info-section">
+              <h3>BlueChat 2.0</h3>
+              <ul class="features">
+                <li>🚀 Voice Message Feature</li>
+                <li>🚀 Custom Themes</li>
+                <li>🚀 Multi-device Sync</li>
+              </ul>
+              <a href="#" class="notify-btn" onclick="alert('You will be notified soon!')">🔔 Notify Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>Why BlueChat?</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <span class="about-icon">🔐</span>
+        <h3>Privacy First</h3>
+        <p>No servers, no tracking. Your messages stay private with end-to-end encryption.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-icon">📶</span>
+        <h3>No Internet Required</h3>
+        <p>Works completely offline using Bluetooth. Perfect for events and low-connectivity areas.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-icon">⚡</span>
+        <h3>Fast & Reliable</h3>
+        <p>Direct peer-to-peer connection ensures fast and reliable message delivery.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-icon">🎯</span>
+        <h3>Anonymous</h3>
+        <p>Connect anonymously without creating accounts or sharing personal information.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-icon">💾</span>
+        <h3>Lightweight</h3>
+        <p>Only 15MB in size. Works on all Android devices from version 6.0+</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section (New) -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="logo/bluelogo.ico" alt="BlueChat Logo" class="footer-logo-img">
+          <h4>BlueChat</h4>
+        </div>
+        <p>Connect offline. Message securely.</p>
+        <p class="version-info">Current Version: 1.0</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/amarjeet-kumar-7237ba372/" target="_blank" title="LinkedIn" class="social-link-item">
+            <img src="logo/linkedin.jpg" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://www.youtube.com/@whoami-amarjeet" target="_blank" title="YouTube" class="social-link-item">
+            <img src="logo/youtube.jpg" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://www.instagram.com/whoa.mi580/" target="_blank" title="Instagram" class="social-link-item">
+            <img src="instagram.jpg" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586700243863" target="_blank" title="Facebook" class="social-link-item">
+            <img src="logo/facebook.png" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="mailto:whoami.amar@gmail.com.app" title="Email" class="social-link-item">
+            <img src="logo/gmail.png" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://x.com/whoami_Amar" target="_blank" title="Twitter" class="social-link-item">
+            <img src="logo/twitter.jpg" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+          <a href="https://github.com/Amarjeetlocato?tab=packages" target="_blank" title="github" class="social-link-item">
+            <img src="logo/github.png" alt="BlueChat" class="social-logo">
+            <span class="social-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BlueChat by <a href="https://github.com" target="_blank" class="whoami-link">whoami</a>. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="bluechat.js"></script>
+</body>
+</html>
